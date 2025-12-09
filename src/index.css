@@ -6,26 +6,30 @@
 
 @layer base {
   :root {
-    --background: 245 247 250;
-    --foreground: 210 50% 13%;
+    --background: 0 0% 7%;
+    --foreground: 0 0% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 210 50% 13%;
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 210 50% 13%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 210 50% 13%;
+    --primary: 0 0% 10%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 11 66% 61%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 280 100% 70%;
+    --secondary-foreground: 0 0% 10%;
 
-    --muted: 245 247 250;
-    --muted-foreground: 215 20% 50%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
 
-    --accent: 11 66% 61%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 280 100% 70%;
+    --accent-foreground: 0 0% 10%;
+
+    --neon: 280 100% 70%;
+    --neon-cyan: 180 100% 50%;
+    --neon-pink: 330 100% 70%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -109,5 +113,41 @@
   h5,
   h6 {
     font-family: "Exo 2", sans-serif;
+  }
+}
+
+@layer utilities {
+  .neon-glow {
+    box-shadow:
+      0 0 20px rgba(167, 139, 250, 0.6),
+      0 0 40px rgba(167, 139, 250, 0.4),
+      0 0 60px rgba(167, 139, 250, 0.2);
+  }
+
+  .neon-text {
+    text-shadow:
+      0 0 10px rgba(167, 139, 250, 0.8),
+      0 0 20px rgba(167, 139, 250, 0.6),
+      0 0 30px rgba(167, 139, 250, 0.4);
+  }
+
+  .neon-border {
+    border: 2px solid rgba(167, 139, 250, 0.5);
+    box-shadow:
+      0 0 10px rgba(167, 139, 250, 0.5),
+      inset 0 0 10px rgba(167, 139, 250, 0.2);
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, #a78bfa 0%, #06b6d4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
   }
 }
