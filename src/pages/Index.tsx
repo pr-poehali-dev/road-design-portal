@@ -151,7 +151,7 @@ const Index = () => {
             {[
               {
                 id: 'federal',
-                icon: 'Highway',
+                icon: 'MoveRight',
                 title: 'Федеральные и региональные',
                 subtitle: 'Магистрали I-IV категорий',
                 image: 'https://images.unsplash.com/photo-1561361513-2d000a50f0dc?w=800&q=80'
@@ -172,7 +172,7 @@ const Index = () => {
               },
               {
                 id: 'infrastructure',
-                icon: 'Bridge',
+                icon: 'Construction',
                 title: 'ИССО',
                 subtitle: 'Мосты, путепроводы, тоннели',
                 image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80'
@@ -210,7 +210,7 @@ const Index = () => {
                 <div>
                   <div className="flex items-center gap-4 mb-6">
                     <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-500 to-blue-500 flex items-center justify-center neon-glow">
-                      <Icon name="Highway" className="text-white" size={32} />
+                      <Icon name="MoveRight" className="text-white" size={32} />
                     </div>
                     <div>
                       <h3 className="text-3xl font-bold text-white">Дороги федерального и регионального значения</h3>
@@ -396,7 +396,7 @@ const Index = () => {
                 <div>
                   <div className="flex items-center gap-4 mb-6">
                     <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center neon-glow">
-                      <Icon name="Bridge" className="text-white" size={32} />
+                      <Icon name="Construction" className="text-white" size={32} />
                     </div>
                     <div>
                       <h3 className="text-3xl font-bold text-white">Искусственные сооружения (ИССО)</h3>
